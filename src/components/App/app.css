@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&display=swap');
+
+.app {
+  font-family: 'Noto Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 20px;
+}
+
+.app__title {
+  margin: 0 0 10px;
+  font-weight: 100;
+  line-height: 80px;
+  font-size: 90px;
+  color: rgb(196, 189, 197);
+}

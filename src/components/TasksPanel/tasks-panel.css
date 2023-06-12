@@ -1,0 +1,32 @@
+.tasks-panel {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: white;
+  color: rgb(201, 199, 199);
+  border-top: 0.5px solid rgb(201, 199, 199);
+}
+
+.tasks-panel__button-box {
+  display: flex;
+  gap: 10px;
+}
+
+.tasks-panel__button {
+  color: inherit;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+}
+
+.tasks-panel__button_active {
+  border-radius: 5px;
+  outline: 1px solid rgb(196, 189, 197);
+}
+
+.tasks-panel__button_type_clear:hover {
+  border-radius: 5px;
+  outline: 1px solid rgb(196, 189, 197);
+}

@@ -1,0 +1,56 @@
+.task {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom: 0.5px solid rgb(201, 199, 199);
+  gap: 30px;
+  align-items: center;
+  background-color: white;
+  padding: 10px 20px;
+}
+
+.task:nth-child(2) {
+  border-top: 0.5px solid rgb(201, 199, 199);
+}
+
+.task__checkbox-box {
+  position: relative;
+  border: 1px rgb(201, 199, 199)solid;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.task__checkbox {
+  position: absolute;
+
+  clip: rect(0 0 0 0);
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.task__checkbox-icon {
+  position: absolute;
+  z-index: -1;
+}
+
+.task__checkbox:checked + .task__checkbox-icon {
+  z-index: 1;
+  color: green;
+}
+
+.task__title {
+  margin: 0;
+  font-size: 25px;
+}
+
+.task__title_unactive {
+  text-decoration: line-through;
+  color: rgb(201, 199, 199);
+}

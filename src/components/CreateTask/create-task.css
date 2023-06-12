@@ -1,0 +1,54 @@
+.create-task {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+  width: 100%;
+  background-color: white;
+  padding: 10px 20px 10px 25px;
+  box-sizing: border-box;
+}
+
+.create-task__dropdown-button {
+  cursor: pointer;
+  transform: rotate(-45deg);
+  border: 0;
+  background-color: transparent;
+  width: 15px;
+  height: 15px;
+  border-top: 3px solid rgb(201, 199, 199);
+  border-right: 3px solid rgb(201, 199, 199);
+  transition: 0.2s;
+}
+
+.create-task__dropdown-button_active {
+  transition: 0.2s;
+  transform: rotate(135deg);
+}
+
+.create-task__form {
+  display: flex;
+  width: 100%;
+}
+
+.create-task__input-box {
+  display: flex;
+  width: 100%;
+  gap: 30px;
+  align-items: center;
+}
+
+.create-task__input {
+  padding: 0;
+  border: 0;
+  width: 100%;
+  display: flex;
+  border-radius: 0;
+  outline: 0;
+  font-size: 25px;
+  font-family: inherit;
+  font-style: italic;
+}
+
+.create-task__input::placeholder {
+  color: rgb(201, 199, 199);
+}
